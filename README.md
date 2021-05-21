@@ -2,16 +2,21 @@
 A place to stick all my generic Unity code. 
 
 ### Reasoning
-I've made a lot of small games and experiments. I've found myself often opening up old projects and copying utility-esque files, classes and functions.  This is an attempt to streamline that and hopefully share some code with others. 
+I've made a lot of small games and experiments. I've found myself often opening up old projects and copying utility-esque files, classes and functions.  This is an attempt to streamline that and hopefully share some code with others.  
+I also include the ```wget``` command if you wanna dl just that particular file. (```wget``` also works as an alias in Powershell for Windows) 
 
 ## Files and Functions
-[Lerper](https://github.com/jesterswilde/UnityUtil/blob/master/Code/Util/Lerper.cs) - A component to handle moving and rotating over time. Has static methods to dynamically add the component and remove it when it's done. 
+[Lerper](https://github.com/jesterswilde/UnityUtil/blob/master/Code/Util/Lerper.cs) - A component to handle moving and rotating over time. Has static methods to dynamically add the component and remove it when it's done.  
+```wget -o Lerper.cs https://raw.githubusercontent.com/jesterswilde/UnityUtil/master/Code/Util/Lerper.cs```
 
-[Detector](https://github.com/jesterswilde/UnityUtil/blob/master/Code/Physics/Detector.cs) - A component to handle triggers with box colliders.  Has IsBlocked property, OnBlock/OnUnblocked events and Unity Events depending on your preference. 
+[Detector](https://github.com/jesterswilde/UnityUtil/blob/master/Code/Physics/Detector.cs) - A component to handle triggers with box colliders.  Has IsBlocked property, OnBlock/OnUnblocked events and Unity Events depending on your preference.  
+```wget -o Detector.cs https://raw.githubusercontent.com/jesterswilde/UnityUtil/master/Code/Physics/Detector.cs```
 
-[Callback](https://github.com/jesterswilde/UnityUtil/blob/master/Code/Util/Callback.cs) - A (mostly static) component that handles invoking functions at a later time. Does Update and FixedUpdate stuff.
+[Callback](https://github.com/jesterswilde/UnityUtil/blob/master/Code/Util/Callback.cs) - A (mostly static) component that handles invoking functions at a later time. Does Update and FixedUpdate stuff.  
+```wget -o Callback.cs https://raw.githubusercontent.com/jesterswilde/UnityUtil/master/Code/Util/Callback.cs```
 
-[Unity Extensions](https://github.com/jesterswilde/UnityUtil/blob/master/Code/Util/UnityExtensions.cs) - An eclectic collection of extension methods I find useful. 
+[Unity Extensions](https://github.com/jesterswilde/UnityUtil/blob/master/Code/Util/UnityExtensions.cs) - An eclectic collection of extension methods I find useful.  
+```wget -o UnityExtensions.cs https://raw.githubusercontent.com/jesterswilde/UnityUtil/master/Code/Util/UnityExtensions.cs```
   * **LayerMask**.Contains - Lets you know if a layer is contained inside the mask
   * **float**.Map - converts a number in a range to the same relative place in a different range (Didn't write this one)
   * **List**.AddRangeInto - Adds this list into another one. It's mostly for LINQ chaining convienence
