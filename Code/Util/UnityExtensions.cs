@@ -54,7 +54,7 @@ public static class UnityExtensions
         return result;
     }
     /// <summary>
-    /// Returns a random element from a list
+    /// Returns a random element from a list. Returns default if list is empty.
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <param name="list"></param>
@@ -66,7 +66,7 @@ public static class UnityExtensions
         return list[UnityEngine.Random.Range(0, list.Count)];
     }
     /// <summary>
-    /// Shuffles a list into a new list
+    /// Shuffles a list into a new list.
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <param name="list"></param>
@@ -84,7 +84,7 @@ public static class UnityExtensions
         return result;
     }
     /// <summary>
-    /// Shuffles an array in place
+    /// Shuffles an array in place. Returns itself.
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <param name="list"></param>
